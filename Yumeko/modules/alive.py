@@ -7,7 +7,7 @@ from pyrogram import __version__ as pyrover
 from Yumeko.events import register as MEMEK
 from Yumeko import telethn as tbot
 
-PHOTO = "https://images3.alphacoders.com/115/1156277.png"
+PHOTO = "https://telegra.ph/file/22692f689fdf834b2ddad.jpg"
 
 @MEMEK(pattern=("/alive"))
 async def awake(event):
