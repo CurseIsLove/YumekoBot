@@ -77,7 +77,7 @@ YUMEKO_IMG = "https://images3.alphacoders.com/115/1156277.png"
 PM_START_TEXT = """
 Hi!, my name is Izumi! 
 I can help you to manage your groups.
-To know my features hit /help. """[.](https://images3.alphacoders.com/115/1156277.png)
+To know my features hit /help. [.](https://images3.alphacoders.com/115/1156277.png)"""
 
 buttons = [ 
         
