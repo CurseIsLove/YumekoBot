@@ -72,33 +72,24 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-YUMEKO_IMG = "https://telegra.ph/file/e0040466048302df1a451.mp4"
+YUMEKO_IMG = "https://images3.alphacoders.com/115/1156277.png"
 
 PM_START_TEXT = """
-**Heya This is Izumi Group management bot** [ㅤ](https://telegra.ph/Izumi-02-03)
-☉ **×Click the button below for more.**
-"""
+Hi {}, my name is {}! 
+I can help you to manage your groups.
+To know my features hit /help. """
 
-buttons = [
-    [
-        InlineKeyboardButton(text="➕ Add Yumeko To Your group ➕", url="http://t.me/?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="About", callback_data="yumeko_"),
-        InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/izumibotsupport"
-        ),
-    ],
-    [
+buttons = [ 
         
+        [
         InlineKeyboardButton(
-            text="❓ Help&Commands", callback_data="help_back"),
-    ],
+        text=" Add Izumi to your group ", url="t.me/Izumigroupbot?startgroup=true"
+        ),
+    ]
 ]
 
-
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://telegra.ph/Izumi-02-03)
+**Main commands:** [.](https://telegra.ph/file/14c33f0939f408717a6bc.jpg)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
