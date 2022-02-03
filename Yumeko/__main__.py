@@ -75,9 +75,9 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://images3.alphacoders.com/115/1156277.png"
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
+Hi!, my name is Izumi! 
 I can help you to manage your groups.
-To know my features hit /help. """
+To know my features hit /help. """[.](https://images3.alphacoders.com/115/1156277.png)
 
 buttons = [ 
         
@@ -89,7 +89,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-**Main commands:** [.](https://telegra.ph/file/14c33f0939f408717a6bc.jpg)
+**Main commands:** [.](https://images3.alphacoders.com/115/1156277.png)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
