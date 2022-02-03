@@ -470,7 +470,7 @@ def yumeko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Bot", url="https://t.me/HimenoXbot"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/Himenobotsupport"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/Himenosupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
@@ -486,7 +486,7 @@ def yumeko_about_callback(update, context):
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
                  f"\nRead Admin Permissions and Anti-spam for basic info.\n"
                  f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @Himenobotsupport.",
+                 f"\nIf you do need help with further instructions feel free to ask in @Himenosupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -571,7 +571,7 @@ def yumeko_about_callback(update, context):
                 [
                   [
                      InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/Himenobotsupport"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/Himenosupport"),
                   ]
                 ]
             ),
