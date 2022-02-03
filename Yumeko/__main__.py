@@ -391,7 +391,7 @@ def yumeko_about_callback(update, context):
             f"\n\n1.) first, add me to your group.\n"
             f"2.) then promote me as admin and give all permissions except anonymous admin.\n"
             f"3.) after promoting me, type /reload in group to update the admin list.\n"
-            f"4.) add @LunaAssistant to your group or type /join to invite her.\n"
+            f"4.) add to your group or type /join to invite her.\n"
             f"5.) turn on the video chat first before start to play music.\n"
             f"\n📌 if userbot doesn't join voice chat make sure voice chat is active, or type /leave then type /join again..",
             parse_mode=ParseMode.MARKDOWN,
@@ -475,12 +475,11 @@ def yumeko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="亗 ʀʏᴜ", url="https://t.me/Ryu_God"),
-                    InlineKeyboardButton(text="Tarun • [ᴀc͜͡ɢᴄ]", url="https://t.me/TheBlackLinen"),
+                    InlineKeyboardButton(text="Zeref", url="https://t.me/FringesBright"),
                  ],
                  [
-                    InlineKeyboardButton(text="Bot", url="https://t.me/"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/"),
+                    InlineKeyboardButton(text="Bot", url="https://t.me/izumigroupbot"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/Izumibotsupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
@@ -496,7 +495,7 @@ def yumeko_about_callback(update, context):
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
                  f"\nRead Admin Permissions and Anti-spam for basic info.\n"
                  f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @lunaXresso.",
+                 f"\nIf you do need help with further instructions feel free to ask in @Izumibotsupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -571,9 +570,9 @@ def yumeko_about_callback(update, context):
 
     elif query.data == "yumeko_lic":
         query.message.edit_text(
-            text=f"Yumeko is a powerful bot for managing groups with additional features.\n"
-              f"\nYumeko's Licensed Under The GNU (General Public License v3.0)\n"
-              f"\nIf you have any question about Luna,"
+            text=f"Izumi is a powerful bot for managing groups with additional features.\n"
+              f"\nIzumis Licensed Under The GNU (General Public License v3.0)\n"
+              f"\nIf you have any question about Izumi,"
               f"\nreach us at Support Chat.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -581,7 +580,7 @@ def yumeko_about_callback(update, context):
                 [
                   [
                      InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/Izumibotsupport"),
                   ]
                 ]
             ),
@@ -593,7 +592,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi.. ɪ'ᴀᴍ Lᴜɴᴀ*
-                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://www Xhamster.com) .""",
+                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://telegram.com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -894,7 +893,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I Aᴍ Aʟɪᴠᴇ](https://telegra.ph/file/66f93d07eb12515e973b7.mp4), parse_mode=ParseMode.MARKDOWN")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Aᴍ UP!, parse_mode=ParseMode.MARKDOWN")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
