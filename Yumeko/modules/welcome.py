@@ -271,7 +271,7 @@ def new_member(update: Update, context: CallbackContext):
                                 {
                                     InlineKeyboardButton(
                                         text="sᴜᴘᴘᴏʀᴛ​",
-                                        url="https://t.me/IzumiBotSupport",
+                                        url="https://t.me/himenosupport",
                                     )
                                 }
                             ]
