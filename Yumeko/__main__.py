@@ -219,7 +219,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-                        "<b> Curses of mine are Alive!!</b>"
+                        "<b> I am Alive!!!</b>"
             ,
             parse_mode=ParseMode.HTML,
         )
