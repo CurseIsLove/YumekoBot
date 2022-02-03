@@ -219,13 +219,9 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            caption= "Baka, I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
-            ),
+                        "<b> Curses of mine are Alive!!</b>"
+            ,
             parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/IzumiBotSupport")]]
-            ),
         )
         
 def error_handler(update, context):
