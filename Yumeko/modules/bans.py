@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from SaitamaRobot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
+from Yumeko import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
                           WOLVES, dispatcher)
 from Yumeko.modules.disable import DisableAbleCommandHandler
 from Yumeko.modules.helper_funcs.chat_status import (
