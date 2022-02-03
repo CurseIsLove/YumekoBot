@@ -18,7 +18,7 @@ async def awake(event):
   YUMEKO += f"×**Telethon Version : {tlhver}** \n\n"
   YUMEKO += f"×**Pyrogram Version : {pyrover}** \n\n"
   YUMEKO += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/YumekoProBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/izumibotsupport")]]
+  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/Izumigroupbot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/izumibotsupport")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=YUMEKO,  buttons=BUTTON)
 
 @MEMEK(pattern=("/reload"))
