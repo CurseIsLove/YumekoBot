@@ -12,7 +12,7 @@ PHOTO = "https://images3.alphacoders.com/115/1156277.png"
 @MEMEK(pattern=("/alive"))
 async def awake(event):
   tai = event.sender.first_name
-  YUMEKO = "**Holla I'm Yumeko!** \n\n"
+  YUMEKO = "**Holla I'm Izumi!** \n\n"
   YUMEKO += "×**I'm Working Properly** \n\n"
   YUMEKO += "×**My Owner : [Zeref](https://t.me/FringesBright)**× \n\n"
   YUMEKO += f"×**Telethon Version : {tlhver}** \n\n"
