@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://images3.alphacoders.com/115/1156277.png"
 
 PM_START_TEXT = """
-Hi!, my name is Izumi! 
+Hi!, my name is Himeno! 
 I can help you to manage your groups.
 To know my features hit /help. [.](https://images3.alphacoders.com/115/1156277.png)"""
 
@@ -83,7 +83,7 @@ buttons = [
         
         [
         InlineKeyboardButton(
-        text=" Add Izumi to your group ", url="t.me/Izumigroupbot?startgroup=true"
+        text=" Add Himeno to your group ", url="t.me/HimenoXBot?startgroup=true"
         ),
     ]
 ]
@@ -94,7 +94,7 @@ HELP_STRINGS = """
 ❂ /help: Sends this message; I'll tell you more about myself.
 
 All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Yumeko, reach us at here"""
+If you want to report any bugs or need any help with setting up Himeno, reach us at here"""
 
 
 
@@ -469,8 +469,8 @@ def yumeko_about_callback(update, context):
                     InlineKeyboardButton(text="Zeref", url="https://t.me/FringesBright"),
                  ],
                  [
-                    InlineKeyboardButton(text="Bot", url="https://t.me/izumigroupbot"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/Izumibotsupport"),
+                    InlineKeyboardButton(text="Bot", url="https://t.me/HimenoXbot"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/Himenobotsupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
@@ -486,7 +486,7 @@ def yumeko_about_callback(update, context):
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
                  f"\nRead Admin Permissions and Anti-spam for basic info.\n"
                  f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @Izumibotsupport.",
+                 f"\nIf you do need help with further instructions feel free to ask in @Himenobotsupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -506,11 +506,11 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_del":
         query.message.edit_text(
             text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Yumeko caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
+                     f"\nTo avoid slowing down, Himeno caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
                     f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Yumeko to check who the admins are again and their permissions\n"
                     f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
-                    f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
-                    f"\nThe message very clearly states that you need these rights - not Yumeko.",
+                    f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Himeno settings, you need to have the Change group info permission.\n"
+                    f"\nThe message very clearly states that you need these rights - not Himeno.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -561,9 +561,9 @@ def yumeko_about_callback(update, context):
 
     elif query.data == "yumeko_lic":
         query.message.edit_text(
-            text=f"Izumi is a powerful bot for managing groups with additional features.\n"
-              f"\nIzumis Licensed Under The GNU (General Public License v3.0)\n"
-              f"\nIf you have any question about Izumi,"
+            text=f"Himeno is a powerful bot for managing groups with additional features.\n"
+              f"\nHimeno Licensed Under The GNU (General Public License v3.0)\n"
+              f"\nIf you have any question about Himeno,"
               f"\nreach us at Support Chat.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -571,7 +571,7 @@ def yumeko_about_callback(update, context):
                 [
                   [
                      InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/Izumibotsupport"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/Himenobotsupport"),
                   ]
                 ]
             ),
@@ -930,7 +930,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Yumeko is deployed successfully.")
+        LOGGER.info("Himeno is deployed successfully.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
