@@ -75,10 +75,7 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://telegra.ph/file/e0040466048302df1a451.mp4"
 
 PM_START_TEXT = """
-**Hey I am Yumeko** [ㅤ](https://telegra.ph/file/6643b0fb6792b2e5e844a.mp4)
-️➖➖➖➖➖➖➖➖➖➖➖➖➖
-**×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
-️➖➖➖➖➖➖➖➖➖➖➖➖➖
+**Heya This is Izumi Group management bot** [ㅤ](https://telegra.ph/Izumi-02-03)
 ☉ **×Click the button below for more.**
 """
 
@@ -89,7 +86,7 @@ buttons = [
     [
         InlineKeyboardButton(text="About", callback_data="yumeko_"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/"
+            text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/izumibotsupport"
         ),
     ],
     [
@@ -101,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://telegra.ph/file/efdee100cc31b4b3e0be2.mp4)
+**Main commands:**  [ㅤ](https://telegra.ph/Izumi-02-03)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
@@ -111,7 +108,7 @@ If you want to report any bugs or need any help with setting up Yumeko, reach us
 
 
 DONATE_STRING = """Hehe, baka!!
- [Is that so!!](https://t.me/Ryu_God) ❤️
+ [Is that so!!](https://t.me/FringesBright) ❤️
 """
 
 IMPORTED = {}
