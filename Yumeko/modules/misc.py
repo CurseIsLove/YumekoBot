@@ -80,65 +80,12 @@ def markdown_help(update: Update, context: CallbackContext):
         return
     markdown_help_sender(update)
     
-@run_async
-@send_action(ChatAction.UPLOAD_PHOTO)
-def rmemes(update, context):
-    msg = update.effective_message
-    chat = update.effective_chat
-
-    SUBREDS = [
-        "meirl",
-        "dankmemes",
-        "AdviceAnimals",
-        "memes",
-        "meme",
-        "memes_of_the_dank",
-        "PornhubComments",
-        "teenagers",
-        "memesIRL",
-        "insanepeoplefacebook",
-        "terriblefacebookmemes",
-    ]
-
-    subreddit = random.choice(SUBREDS)
-    res = r.get(f"https://meme-api.herokuapp.com/gimme/{subreddit}")
-
-    if res.status_code != 200:  # Like if api is down?
-        msg.reply_text("Sorry some error occurred :(")
-        return
-    else:
-        res = res.json()
-
-    rpage = res.get(str("subreddit"))  # Subreddit
-    title = res.get(str("title"))  # Post title
-    memeu = res.get(str("url"))  # meme pic url
-    plink = res.get(str("postLink"))
-
-    caps = f"- <b>Title</b>: {title}\n"
-    caps += f"- <b>Subreddit:</b> <pre>r/{rpage}</pre>"
-
-    keyb = [[InlineKeyboardButton(text="Subreddit Postlink 🔗", url=plink)]]
-    try:
-        context.bot.send_photo(
-            chat.id,
-            photo=memeu,
-            caption=(caps),
-            reply_markup=InlineKeyboardMarkup(keyb),
-            timeout=60,
-            parse_mode=ParseMode.HTML,
-        )
-
-    except BadRequest as excp:
-        return msg.reply_text(f"Error! {excp.message}")
-
 
 
 __help__ = """
 *Available commands:*
 *Markdown:*
  ❍ /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
- *rmeme:*
- ❍ /rmeme*:* sends a random meme from reddit.
 *Paste:*
  ❍ /paste*:* Saves replied content to `nekobin.com` and replies with a url
 *React:*
@@ -186,16 +133,13 @@ To compute fractions, enter expressions as numerator(over)denominator. For examp
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
-REDDIT_MEMES_HANDLER = DisableAbleCommandHandler("rmeme", rmemes) 
 
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
-dispatcher.add_handler(REDDIT_MEMES_HANDLER)
 
 __mod_name__ = "Extras"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,
     MD_HELP_HANDLER,
-    REDDIT_MEMES_HANDLER,
 ]
