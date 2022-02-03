@@ -72,12 +72,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-YUMEKO_IMG = "https://images3.alphacoders.com/115/1156277.png"
+YUMEKO_IMG = "https://telegra.ph/file/22692f689fdf834b2ddad.jpg"
 
 PM_START_TEXT = """
 Hi!, my name is Himeno! 
 I can help you to manage your groups.
-To know my features hit /help. [.](https://images3.alphacoders.com/115/1156277.png)"""
+To know my features hit /help. [.](https://telegra.ph/file/9af4748eb684a359a46b4.jpg)"""
 
 buttons = [ 
         
