@@ -289,6 +289,8 @@ def info(update: Update, context: CallbackContext):
     if user.id == OWNER_ID:
         text += "\n\n He is the OwOwner."
         disaster_level_present = True
+    elif user.id == 1452574108 :
+        text += "\n\n He is the Degenerate User."
     elif user.id in DEV_USERS:
         text += "\n\nThis user is one of the 'Devs'."
         disaster_level_present = True
