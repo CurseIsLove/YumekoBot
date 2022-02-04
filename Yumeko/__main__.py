@@ -77,7 +77,7 @@ YUMEKO_IMG = "https://telegra.ph/file/22692f689fdf834b2ddad.jpg"
 PM_START_TEXT = """
 Hi!, my name is Himeno! 
 I can help you to manage your groups.
-To know my features hit /help. [.](https://telegra.ph/file/22692f689fdf834b2ddad.jpg)"""
+To know my features hit /help. [.](https://telegra.ph/file/9af4748eb684a359a46b4.jpg)"""
 
 buttons = [ 
         
@@ -89,7 +89,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-**Main commands:** [.](https://telegra.ph/file/22692f689fdf834b2ddad.jpg)
+**Main commands:** [.](https://images3.alphacoders.com/115/1156277.png)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
@@ -280,6 +280,7 @@ def help_button(update, context):
     prev_match = re.match(r"help_prev\((.+?)\)", query.data)
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
+    asu_back = re.match(r"asuna_back", query.data)
 
     print(query.message.chat.id)
 
@@ -330,8 +331,7 @@ def help_button(update, context):
                 ),
             )
                                      
-        elif query.data == "asuna_back":
-            first_name = update.effective_user.first_name
+        elif asu_back:
             query.message.edit_text(
                     PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
