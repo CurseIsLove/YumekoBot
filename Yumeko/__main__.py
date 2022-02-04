@@ -89,7 +89,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-**Main commands:** [.](https://images3.alphacoders.com/115/1156277.png)
+**Main commands:** [.](https://telegra.ph/file/22692f689fdf834b2ddad.jpg)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
