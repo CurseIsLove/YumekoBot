@@ -333,7 +333,7 @@ def help_button(update, context):
         elif query.data == "asuna_back":
             first_name = update.effective_user.first_name
             query.message.edit_text(
-                    PM_START_TEXT.format,
+                    PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     parse_mode=ParseMode.MARKDOWN,
                     timeout=60,
