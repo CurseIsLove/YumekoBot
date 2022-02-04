@@ -77,7 +77,7 @@ YUMEKO_IMG = "https://telegra.ph/file/22692f689fdf834b2ddad.jpg"
 PM_START_TEXT = """
 Hi!, my name is Himeno! 
 I can help you to manage your groups.
-To know my features hit /help. [.](https://telegra.ph/file/9af4748eb684a359a46b4.jpg)"""
+To know my features hit /help. [.](https://telegra.ph/file/22692f689fdf834b2ddad.jpg)"""
 
 buttons = [ 
         
@@ -89,7 +89,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-**Main commands:** [.](https://images3.alphacoders.com/115/1156277.png)
+**Main commands:** [.](https://telegra.ph/file/22692f689fdf834b2ddad.jpg)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
