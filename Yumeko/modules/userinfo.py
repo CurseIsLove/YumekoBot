@@ -291,14 +291,12 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
     elif user.id == 1452574108 :
         text += "\n\n He is the Degenerate User."
+        disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\nThis user is one of the 'Devs'."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\n This User has Sudo access of me."
-        disaster_level_present = True
-    elif user.id == 1452574108 :
-        text += "\n\n He is the Degenerate User."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\n This is an Support User ."
