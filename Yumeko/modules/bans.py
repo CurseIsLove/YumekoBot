@@ -39,6 +39,7 @@ from Yumeko.modules.helper_funcs.chat_status import (
 from Yumeko.modules.helper_funcs.extraction import extract_user_and_text
 from Yumeko.modules.helper_funcs.string_handling import extract_time
 from Yumeko.modules.log_channel import loggable
+from Yumeko.modules.helper_funcs.filters import CustomFilters
 
 
 @bot_admin
