@@ -275,7 +275,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 @run_async
 def help_button(update, context):
-    query = update.callback_query
+    query = update.query
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
     prev_match = re.match(r"help_prev\((.+?)\)", query.data)
     next_match = re.match(r"help_next\((.+?)\)", query.data)
@@ -333,7 +333,7 @@ def help_button(update, context):
         elif query.data == "asuna_back":
             first_name = update.effective_user.first_name
             query.message.edit_text(
-                    PM_START_TEXT.format,
+                    PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     parse_mode=ParseMode.MARKDOWN,
                     timeout=60,
