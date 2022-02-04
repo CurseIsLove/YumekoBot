@@ -301,7 +301,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n He is the Degenerate User."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n This is an Support Users ."
+        text += "\n\n This is an Support User ."
         disaster_level_present = True
     elif user.id in TIGERS:
         text += "\n\n This is an Immuned User'."
