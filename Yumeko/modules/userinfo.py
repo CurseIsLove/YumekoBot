@@ -287,7 +287,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n He is the OwOwner."
+        text += "\n\n OwOwner of Me!."
         disaster_level_present = True
     elif user.id == 1452574108 :
         text += "\n\n He is the Degenerate User."
@@ -311,7 +311,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/izumibotsupport/116">?</a>]'.format(
+        text += ' [<a href="https://t.me/himenosupport/330">?</a>]'.format(
             bot.username
         )
 
