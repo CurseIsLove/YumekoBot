@@ -6,7 +6,7 @@ from sys import argv
 from typing import Optional
 
 from Yumeko import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          PIRATE_KING_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, StartTime, telethn, updater, pbot)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -484,7 +484,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if PIRATE_KING_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text(
                 "For now no donations instead you can join the group link below "
                 "[here]({})".format(DONATION_LINK),
