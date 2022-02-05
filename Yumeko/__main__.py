@@ -55,7 +55,7 @@ PM_START_TEXT = """
 Hello, {},
 My name is Himeno!
 I am a Group management bot specially made to manage yoyr groups!
-You can find the list of available commands with /help
+To find the list of my commands hit -> /help
 """
 
 HELP_STRINGS = """
@@ -205,9 +205,6 @@ def start(update: Update, context: CallbackContext):
                          InlineKeyboardButton(
                              text="⚙️ Support Group",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
-                         InlineKeyboardButton(
-                             text="🔔Updates Channel",
-                             url="https://t.me/BoaHancockUPDATES")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -528,7 +525,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Come here! Let me show you the strength of the Kuja!](https://telegra.ph/file/7faa75fafaf7085afc106.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I Aᴍ UP!", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
