@@ -246,8 +246,6 @@ def gbam(update, context):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
     
-    if user.id == OWNER_ID:
-        text += "\n\n Can't gbam my master baka!!."
 
     if user_id:
         gbam_user = bot.get_chat(user_id)
