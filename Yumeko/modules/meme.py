@@ -10,7 +10,7 @@ from telegram.utils.helpers import escape_markdown
 from Yumeko.modules.helper_funcs.extraction import extract_user
 from Yumeko.modules.helper_funcs.filters import CustomFilters
 from Yumeko.modules.helper_funcs.alternate import typing_action
-from Yumeko import dispatcher, DRAGONS, DEMONS, LOGGER
+from Yumeko import dispatcher, DRAGONS, DEMONS, LOGGER, OWNER_ID
 from Yumeko.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
 import Yumeko.modules.helper_funcs.fun_strings as fun
@@ -245,6 +245,9 @@ def gbam(update, context):
 
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
+    
+    if user.id == OWNER_ID:
+        text += "\n\n Can't gbam my master baka!!."
 
     if user_id:
         gbam_user = bot.get_chat(user_id)
@@ -254,6 +257,7 @@ def gbam(update, context):
     else:
         user1 = curr_user
         user2 = bot.first_name
+    if user_id = OWNER_ID:
 
 
     if update.effective_message.chat.type == "private":
