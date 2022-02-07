@@ -257,7 +257,6 @@ def gbam(update, context):
     else:
         user1 = curr_user
         user2 = bot.first_name
-    if user_id = OWNER_ID:
 
 
     if update.effective_message.chat.type == "private":
