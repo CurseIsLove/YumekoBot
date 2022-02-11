@@ -76,6 +76,7 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 
 
 
-
-__mod_name__ = "ᴄᴏᴜᴘʟᴇs"
+__help__ = """ /couples : To ship couples in group! """
+__mod_name__ = "Shippering"
+__command_list__ = ["couples"]
 
