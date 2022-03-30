@@ -609,7 +609,6 @@ GBAM_REASON = (
     "Bts ka choda",
     "Kabhi Kabhi lagta he apun hi bhagwan he",
     "Aise hi sexy lag raha tha",
-    "Eminem ka choda",
     "This is Requime",
     "Your Next Line is 'I havent done anything'",
     "Ye majboor hai par aap nahi \n saste nashe na kare na karne de",
@@ -627,7 +626,10 @@ GBAM_REASON = (
     "Big mom ex husband",
     "Iavonkov SIMP",
     "This is my Ninja way ka choda",
-
+    "Ismai Bhot Zayada Attitude hai",
+    "Group Join Nahi kiya",
+    "Mass add krega le gban",
+    "is this a work of a Stand User ?!?!",
 )
 
 GBOOM = "<b>Beginning Of Global Boom For {user2}</b>  \n \nChat Id : <code>{chatid}</code> \nReason : <i>{reason}</i> \nGboomed By {user1}"
